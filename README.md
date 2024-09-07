@@ -4,7 +4,7 @@ Here is a **README.md** file for the Warehouse Management App with clear instruc
 
 # **Warehouse Management App**
 
-A React Native app for managing warehouse inventory with role-based access control for Managers and Staff. It includes features like item addition, deletion, searching, and smooth dark/light theme toggling with optimized UI/UX.
+A React Native app for managing warehouse inventory with role-based access control for Managers and Staff. It includes features like item addition, deletion, searching with optimized UI/UX.
 
 ## **Features**
 
@@ -12,7 +12,6 @@ A React Native app for managing warehouse inventory with role-based access contr
 - **Inventory Management**: View, search, and filter inventory items.
   - Managers can add, edit, and delete items.
   - Staff can only view items & update Item Quantity.
-- **Dark/Light Theme Toggle**: Smooth animated transition between themes.
 - **Error Handling**: Form validation with real-time error messages.
 - **Optimized UI/UX**: Responsive design with improved FlatList, search, and input fields.
 
@@ -113,11 +112,9 @@ npx react-native start
 ```
 WarehouseApp/
 ├── src/
-│   ├── components/             # Reusable components (e.g., buttons)
 │   ├── navigation/             # Navigation logic
 │   ├── screens/                # All app screens (Login, Inventory, etc.)
 │   ├── redux/                  # Redux setup and slices
-│   ├── theme/                  # Dark/Light theme configurations
 │   └── utils/                  # Utility functions (e.g., validation)
 ├── App.js                      # Main entry point
 ├── package.json                # Project dependencies
@@ -130,7 +127,6 @@ WarehouseApp/
 - **src/navigation/AppNavigator.js**: Manages navigation between screens.
 - **src/screens/**: Contains the UI logic for each screen (Login, Inventory, etc.).
 - **src/redux/**: Redux slices for managing app state (e.g., authentication, inventory).
-- **src/theme/**: Contains theme-related files for dark and light modes.
 
 ---
 
@@ -140,7 +136,7 @@ WarehouseApp/
 - **Redux Toolkit**: For state management.
 - **Formik & Yup**: For form handling and validation.
 - **React Navigation**: For navigation between screens.
-- **Animated API**: Used for smooth transitions (theme toggling).
+- **Animated API**: Used for smooth transitions
 
 ---
 
