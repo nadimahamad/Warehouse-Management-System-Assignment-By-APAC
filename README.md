@@ -1,3 +1,165 @@
+Here is a **README.md** file for the Warehouse Management App with clear instructions on how to install, run, and understand the project:
+
+---
+
+# **Warehouse Management App**
+
+A React Native app for managing warehouse inventory with role-based access control for Managers and Staff. It includes features like item addition, deletion, searching, and smooth dark/light theme toggling with optimized UI/UX.
+
+## **Features**
+
+- **Authentication**: Role-based login (Manager or Staff).
+- **Inventory Management**: View, search, and filter inventory items.
+  - Managers can add, edit, and delete items.
+  - Staff can only view items.
+- **Dark/Light Theme Toggle**: Smooth animated transition between themes.
+- **Error Handling**: Form validation with real-time error messages.
+- **Optimized UI/UX**: Responsive design with improved FlatList, search, and input fields.
+
+---
+
+## **Screens**
+
+- **Login Screen**: Users can log in as either a Manager or Staff.
+- **Inventory Screen**: View, search, and filter warehouse inventory.
+- **Item Detail Screen**: Detailed view of an item. Managers can delete items.
+- **Add Item Screen**: Only accessible by Managers to add new items to the inventory.
+
+---
+
+## **Installation Instructions**
+
+### **Prerequisites**
+
+- **Node.js** and **npm** installed on your machine.
+- **React Native CLI** installed.
+- **Android Studio** (for Android development) or **Xcode** (for iOS development).
+
+### **Clone the Repository**
+
+```bash
+git clone https://github.com/nadimahamad/Warehouse-Management-System-Assignment-By-APAC.git
+```
+
+### **Install Dependencies**
+
+After cloning the repository, run the following command to install all dependencies:
+
+```bash
+npm install
+```
+
+### **Link Dependencies**
+
+If you're running on iOS, you need to install pods:
+
+```bash
+cd ios
+pod install
+cd ..
+```
+
+---
+
+## **Running the App**
+
+### **For Android:**
+
+Ensure you have an Android emulator running, or connect a real Android device.
+
+```bash
+npx react-native run-android
+```
+
+### **For iOS:**
+
+Ensure you have Xcode installed and an iOS simulator running, or connect a real iOS device.
+
+```bash
+npx react-native run-ios
+```
+
+### **Run the Metro Bundler**
+
+In a separate terminal window, you can start the Metro Bundler by running:
+
+```bash
+npx react-native start
+```
+
+---
+
+## **Usage**
+
+### **Login Screen**
+
+- **Manager**: Use the username `user` and password `password`.
+- **Staff**: Use the username `staff` and password `password`.
+
+### **Theme Toggling**
+
+- You can toggle between **dark** and **light** themes on the login screen and throughout the app by pressing the **Toggle Theme** button.
+
+### **Managing Inventory**
+
+- Managers can add new items via the "Add New Item" button on the Inventory screen.
+- Both Managers and Staff can search for items using the search bar at the top of the Inventory screen.
+- Clicking on an item shows its details, and Managers can delete items from this screen.
+
+---
+
+## **Project Structure**
+
+```
+WarehouseApp/
+├── src/
+│   ├── components/             # Reusable components (e.g., buttons)
+│   ├── navigation/             # Navigation logic
+│   ├── screens/                # All app screens (Login, Inventory, etc.)
+│   ├── redux/                  # Redux setup and slices
+│   ├── theme/                  # Dark/Light theme configurations
+│   └── utils/                  # Utility functions (e.g., validation)
+├── App.js                      # Main entry point
+├── package.json                # Project dependencies
+└── README.md                   # This README file
+```
+
+### **Key Files**
+
+- **App.js**: Main application setup including Redux and Theme provider.
+- **src/navigation/AppNavigator.js**: Manages navigation between screens.
+- **src/screens/**: Contains the UI logic for each screen (Login, Inventory, etc.).
+- **src/redux/**: Redux slices for managing app state (e.g., authentication, inventory).
+- **src/theme/**: Contains theme-related files for dark and light modes.
+
+---
+
+## **Technologies Used**
+
+- **React Native**: Framework for building cross-platform mobile apps.
+- **Redux Toolkit**: For state management.
+- **Formik & Yup**: For form handling and validation.
+- **React Navigation**: For navigation between screens.
+- **Animated API**: Used for smooth transitions (theme toggling).
+
+---
+
+## **Contributing**
+
+Feel free to submit issues or pull requests if you'd like to contribute to the project.
+
+---
+
+## **Author**
+
+- **Your Name** - [GitHub Profile](https://github.com/nadimahamad)
+
+---
+
+With this README file, you now have clear instructions on how to install, run, and contribute to the project!
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
