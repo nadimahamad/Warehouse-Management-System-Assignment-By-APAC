@@ -16,6 +16,9 @@ A React Native app for managing warehouse inventory with role-based access contr
 - **Optimized UI/UX**: Responsive design with improved FlatList, search, and input fields.
 
 ---
+## **Login Credentials**
+- Manager : username: user, password: password
+- Staff : username: staff, password: password
 
 ## **Screens**
 
