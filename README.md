@@ -11,7 +11,7 @@ A React Native app for managing warehouse inventory with role-based access contr
 - **Authentication**: Role-based login (Manager or Staff).
 - **Inventory Management**: View, search, and filter inventory items.
   - Managers can add, edit, and delete items.
-  - Staff can only view items.
+  - Staff can only view items & update Item Quantity.
 - **Dark/Light Theme Toggle**: Smooth animated transition between themes.
 - **Error Handling**: Form validation with real-time error messages.
 - **Optimized UI/UX**: Responsive design with improved FlatList, search, and input fields.
